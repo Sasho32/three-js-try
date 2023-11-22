@@ -23,7 +23,7 @@ renderer.render(scene, camera);
 
 const geometry = new THREE.TorusGeometry(5, 0.5, 16, 100);
 // const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
-const torusTexture = new THREE.TextureLoader().load('red_texture.jpg');
+const torusTexture = new THREE.TextureLoader().load('https://t3.ftcdn.net/jpg/02/97/45/54/360_F_297455425_lNivJ7rm7LPLuApu3jx36L02PeLllDxN.jpg');
 const material = new THREE.MeshStandardMaterial({ map: torusTexture });
 const torus = new THREE.Mesh(geometry, material);
 
@@ -65,14 +65,15 @@ Array(1000).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('https://t4.ftcdn.net/jpg/02/34/98/73/360_F_234987365_1bwmHyUjVOKIibWEbnwaayE9FQiq2xpu.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
 // const jeffTexture = new THREE.TextureLoader().load('jeff.png');
-const jeffTexture = new THREE.TextureLoader().load('wood.jpg');
-const jupiterTexture = new THREE.TextureLoader().load('jupiter.webp');
+// const jeffTexture = new THREE.TextureLoader().load('wood.jpg');
+const jupiterTexture = new THREE.TextureLoader().load('https://t4.ftcdn.net/jpg/03/09/04/59/360_F_309045980_zKAgyd8feCR69CMWQ1PlhCHhteODo9zd.jpg');
+const jupiterNormalTexture = new THREE.TextureLoader().load('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/06a094a4-7bd7-4bb9-b998-6c1e17f66c08/dbcju0k-b9b333e1-dd8d-4657-90db-7d3e7e179843.png');
 
 // const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 // const jeff = new THREE.Mesh(new THREE.SphereGeometry(3, 32, 32), new THREE.MeshBasicMaterial({ map: jeffTexture }));
@@ -119,8 +120,8 @@ scene.add(jupiter);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('https://t3.ftcdn.net/jpg/03/64/91/04/360_F_364910470_DCjyTv7AlFX0or7TGEcJWkz7JDLnCE5G.jpg');
+const normalTexture = new THREE.TextureLoader().load('https://www.shutterstock.com/image-illustration/normal-map-3d-model-planet-600nw-2269559199.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
