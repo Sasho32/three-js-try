@@ -83,11 +83,11 @@ const CSKAGeometry = new THREE.BoxGeometry(4, 4, 4);
 
 // Load textures
 const textureLoader = new THREE.TextureLoader();
-const c_texture = textureLoader.load('c_texture.png');
-const s_texture = textureLoader.load('s_texture.png');
-const k_texture = textureLoader.load('k_texture.png');
-const a_texture = textureLoader.load('a_texture.png');
-const black_texture = textureLoader.load('black_texture.png');
+const c_texture = textureLoader.load('https://i.postimg.cc/fRhvT5Bm/c-texture.png');
+const s_texture = textureLoader.load('https://i.postimg.cc/q7HBF6Bk/s-texture.png');
+const k_texture = textureLoader.load('https://i.postimg.cc/QtM2Yj78/k-texture.png');
+const a_texture = textureLoader.load('https://i.postimg.cc/63RmmT3N/A-texture.png');
+const black_texture = textureLoader.load('https://i.postimg.cc/jS7PNfkK/black-texture.png');
 
 
 // Create materials with the specified textures
